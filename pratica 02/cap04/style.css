@@ -1,0 +1,21 @@
+#titulo{
+border-bottom-style: inset;
+border-color:  rgb(121, 121, 199);
+
+}
+img{
+float:left;
+height: 300px;
+width: 300px;
+border-radius: 2rem;
+}
+body{
+background-color: rgb(121, 121, 199);
+}
+
+
+#inAltura{
+width: 50px;
+    margin: 0 auto;
+}
+
