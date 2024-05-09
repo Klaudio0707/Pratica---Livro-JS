@@ -13,7 +13,7 @@ let multaLeve = velPermitida + Velocidade20;
 
 if (velCondutor  <= semMulta) {
 resp.innerText = `Sem Multa `
-}else if (velCondutor >= multaLeve && velCondutor >= multaGrave) {
+}else if (velCondutor > multaLeve && velCondutor <= multaGrave) {
     resp.innerText = `Multa Leve`;
 }else{
 resp.innerText = `Multa Grave`;
