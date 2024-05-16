@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+<script>
+ let num ; // criei uma variavel do tipo let sem valor chamada num
+ do {
+    num = Number(prompt("Número: ")); // num recebe o prompt, um valor do usuario
+    if ( num == 0 || num == 1 || isNaN(num)){ // dentro do DO tem um if que se num é igual a 0 ou num igual a 1 ou sem valor
+        alert("Digite um número válido");
+
+    }
+ }while( num ==0 || isNaN(num)) // ação de numero igual a 0 ou sem valor
+ let pares = `Pares entre 1 e ${num}: `; // a variavel pares recebe um texto e imprimi o valor da variavel num
+ for (let i =2; i <= num; i = i + 2){ // o for  tem uma variavel com valor 2 i menor ou igual a num para e - i igual a i
+pares = pares + i + ","
+
+ }
+alert(pares); 
+
+</script>
+
+</body>
+</html>

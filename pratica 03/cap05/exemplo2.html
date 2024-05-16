@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+alert("Digite  para sair");
+
+do{
+const num = Number(prompt("numero:"));
+if(num == 0 || isNaN(num)){
+const sair = confirm("confirma Sáida? ");
+if(sair){
+    break;
+}else{
+
+    continue 
+}
+}
+if( num % 2 == 0) {
+alert(`O dobro de ${num} é: ${num*2}`);
+}else{
+alert(`O triplo de ${num} é: ${num*3}`);
+    
+}
+}while (true)
+alert("Bye, Bye");
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
