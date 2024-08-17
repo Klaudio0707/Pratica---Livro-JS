@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Banco PayBay</title>
+</head>
+<body>
+<header>
+<h1>Banco PayBay</h1>
+<h3 class="Saldo">R$ <pre id="inSaldo">0</pre></h3>
+<nav role="navigation">
+<ul>
+<li><a href="#Menu">Menu</a></li>
+<li><a href="#Extrato">Extrato</a></li>
+<li><a href="#Pix">Pix</a></li>
+<li><a href="#Help">Ajuda</a></li>    
+</ul>    
+</nav>
+
+</header>    
+<article class="Formulario">
+  <fieldset>
+<legend>Cria Sua Conta já!</legend>
+  <form id="Cadastro">
+  <label>Nome Completo:
+  <input type="text" id="inNome" placeholder="Nome Completo">    
+  </label><br>
+  <label>Data de Nascimento:
+  <input type="datetime" placeholder="Data de Nascimento">   
+  </label><br>
+  <label>Estado
+  <input type="text" id="inEndereco" placeholder="Endereço">  
+  </label><br>
+  <label for="name">Feminino
+  <input type="checkbox" name="Female" id="Female">  
+  </label>
+  <label for="checkbox"><input type="checkbox">Masculino</label><br>
+  <input type="submit">   
+  </form>
+  </fieldset>
+</article>
+
+<article class="Deposito">
+    <fieldset>
+    <legend>Deposito em Conta</legend>
+    <form id="frmDeposito">
+    <label>Valor
+    <input type="number" id="inDeposito">
+    </label><br>
+    <input type="submit" value="Deposito">  
+            
+    </form>
+    </fieldset>
+
+</article>
+
+<article class="Transferencia">
+<fieldset>
+<legend>Transferencia</legend>
+<form id="frmTransferencia">
+    <label>Chave Pix:
+    <input type="text" placeholder="Chave-Pix" id="inChavePix">
+    </label><br>
+    <label> Valor:
+    <input type="number" placeholder="Valor R$" id="inTransferir">    
+</label><br>
+<input type="submit" value="Transferir">
+</form>
+</fieldset>
+</article>
+
+
+<footer>Banco PayBay. <a href="#fale">Fale Conosco</a></footer>
+</body>
+</html>
